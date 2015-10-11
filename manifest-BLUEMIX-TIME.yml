@@ -1,0 +1,11 @@
+applications:
+ - name: pas-mysql-local
+   memory: 450M
+   path: ./target/demo-0.0.1-SNAPSHOT.jar
+   instances: 1
+   host: pas-mysql-local
+   buildpack: java_buildpack
+   domain: mybluemix.net
+   services:
+    - pas-mysql
+
