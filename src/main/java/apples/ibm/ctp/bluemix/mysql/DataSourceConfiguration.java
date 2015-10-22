@@ -6,15 +6,10 @@ import org.springframework.cloud.Cloud;
 import org.springframework.cloud.CloudFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Profile;
 
 import javax.sql.DataSource;
 
-/*
- * Data Source used in CLOUD, ie: Bluemix deployment
- */
 @Configuration
-@Profile("cloud")
 public class DataSourceConfiguration
 {
 
